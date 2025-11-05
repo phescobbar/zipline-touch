@@ -13,30 +13,6 @@ const FourthLayout = () => {
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      {/* Navigation */}
-      <nav className="relative z-10 container mx-auto px-4 py-6">
-        <div className="flex justify-end gap-2">
-          <Link
-            to="/"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Layout 1
-          </Link>
-          <Link
-            to="/alternative"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Layout 2
-          </Link>
-          <Link
-            to="/layout-3"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Layout 3
-          </Link>
-        </div>
-      </nav>
-
       {/* Main Content */}
       <main className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
         <div className="max-w-5xl mx-auto space-y-16 lg:space-y-24">

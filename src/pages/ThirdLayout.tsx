@@ -53,53 +53,10 @@ const ThirdLayout = () => {
                 Tecnologia
               </p>
             </div>
-
-            {/* Navigation Links - Desktop Only */}
-            <nav className="hidden lg:flex flex-col gap-3 mt-8">
-              <Link
-                to="/"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
-              >
-                ← Layout 1
-              </Link>
-              <Link
-                to="/alternative"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
-              >
-                ← Layout 2
-              </Link>
-              <Link
-                to="/layout-4"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
-              >
-                ← Layout 4
-              </Link>
-            </nav>
           </aside>
 
           {/* Timeline Content */}
           <main className="lg:w-2/3 xl:w-3/4 py-8 lg:py-16">
-            {/* Mobile Navigation */}
-            <div className="flex gap-3 mb-8 lg:hidden flex-wrap">
-              <Link
-                to="/"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
-              >
-                Layout 1
-              </Link>
-              <Link
-                to="/alternative"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
-              >
-                Layout 2
-              </Link>
-              <Link
-                to="/layout-4"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
-              >
-                Layout 4
-              </Link>
-            </div>
 
             {/* Timeline */}
             <div className="relative">
