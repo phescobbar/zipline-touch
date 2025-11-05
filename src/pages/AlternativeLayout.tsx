@@ -1,7 +1,6 @@
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
 import { Link } from "react-router-dom";
-import CompanyMap from "@/components/CompanyMap";
 
 const AlternativeLayout = () => {
   return (
@@ -107,15 +106,10 @@ const AlternativeLayout = () => {
             </div>
           </div>
         </div>
-
-        {/* Map Section */}
-        <div className="max-w-6xl mx-auto mt-12">
-          <CompanyMap className="w-full h-[400px] md:h-[500px]" />
-        </div>
       </div>
 
       {/* Footer */}
-      <div className="border-t border-border bg-card/50 backdrop-blur-sm mt-16">
+      <div className="border-t border-border bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-center gap-2">
             <p className="text-center text-muted-foreground text-sm md:text-base">

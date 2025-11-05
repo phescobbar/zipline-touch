@@ -1,7 +1,6 @@
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
 import { Link } from "react-router-dom";
-import CompanyMap from "@/components/CompanyMap";
 
 const Index = () => {
   return (
@@ -89,11 +88,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="mt-8">
-          <CompanyMap className="w-full h-[400px] md:h-[500px]" />
         </div>
 
         {/* Footer */}
