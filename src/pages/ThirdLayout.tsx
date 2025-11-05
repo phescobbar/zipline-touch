@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
+import CompanyMap from "@/components/CompanyMap";
 
 const ThirdLayout = () => {
   const timelineItems = [
@@ -142,6 +143,11 @@ const ThirdLayout = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Map Section */}
+            <div className="mt-12 lg:mt-16">
+              <CompanyMap className="w-full h-[400px] md:h-[500px]" />
             </div>
 
             {/* Footer */}

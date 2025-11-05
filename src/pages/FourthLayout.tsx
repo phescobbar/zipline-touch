@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
+import CompanyMap from "@/components/CompanyMap";
 
 const FourthLayout = () => {
   return (
@@ -131,6 +132,11 @@ const FourthLayout = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Map Section */}
+          <div className="animate-fade-in" style={{ animationDelay: "800ms" }}>
+            <CompanyMap className="w-full h-[400px] md:h-[500px]" />
           </div>
         </div>
       </main>
