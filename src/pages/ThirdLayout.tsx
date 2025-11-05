@@ -59,13 +59,19 @@ const ThirdLayout = () => {
                 to="/"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
               >
-                ← Layout Principal
+                ← Layout 1
               </Link>
               <Link
                 to="/alternative"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
               >
-                ← Layout Alternativo
+                ← Layout 2
+              </Link>
+              <Link
+                to="/layout-4"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md hover:bg-accent/50"
+              >
+                ← Layout 4
               </Link>
             </nav>
           </aside>
@@ -73,7 +79,7 @@ const ThirdLayout = () => {
           {/* Timeline Content */}
           <main className="lg:w-2/3 xl:w-3/4 py-8 lg:py-16">
             {/* Mobile Navigation */}
-            <div className="flex gap-3 mb-8 lg:hidden">
+            <div className="flex gap-3 mb-8 lg:hidden flex-wrap">
               <Link
                 to="/"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
@@ -85,6 +91,12 @@ const ThirdLayout = () => {
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
               >
                 Layout 2
+              </Link>
+              <Link
+                to="/layout-4"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md bg-card hover:bg-accent/50 border border-border"
+              >
+                Layout 4
               </Link>
             </div>
 

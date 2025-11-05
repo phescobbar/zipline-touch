@@ -19,6 +19,12 @@ const AlternativeLayout = () => {
         >
           Layout 3
         </Link>
+        <Link 
+          to="/layout-4"
+          className="px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
+        >
+          Layout 4
+        </Link>
       </div>
 
       {/* Hero Section with Logo */}

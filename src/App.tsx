@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AlternativeLayout from "./pages/AlternativeLayout";
 import ThirdLayout from "./pages/ThirdLayout";
+import FourthLayout from "./pages/FourthLayout";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/alternative" element={<AlternativeLayout />} />
           <Route path="/layout-3" element={<ThirdLayout />} />
+          <Route path="/layout-4" element={<FourthLayout />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
