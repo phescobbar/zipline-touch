@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
+import CompanyMap from "@/components/CompanyMap";
 
 const ThirdLayout = () => {
   const timelineItems = [
@@ -141,6 +142,18 @@ const ThirdLayout = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Map Section */}
+            <div className="mt-12 lg:mt-16 relative pl-16 lg:pl-20 animate-fade-in" style={{ animationDelay: "450ms" }}>
+              <div className="absolute left-0 w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center text-2xl lg:text-3xl shadow-lg shadow-accent/20">
+                🗺️
+              </div>
+              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-lg overflow-hidden hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
+                <div className="h-64 lg:h-80">
+                  <CompanyMap />
+                </div>
               </div>
             </div>
 

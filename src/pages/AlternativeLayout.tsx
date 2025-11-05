@@ -1,6 +1,7 @@
 import logo from "@/assets/logo.png";
 import montesiteLogo from "@/assets/montesite-logo.svg";
 import { Link } from "react-router-dom";
+import CompanyMap from "@/components/CompanyMap";
 
 const AlternativeLayout = () => {
   return (
@@ -91,22 +92,29 @@ const AlternativeLayout = () => {
             </div>
           </div>
 
-          {/* CNPJ Card */}
-          <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
-            <div className="text-center space-y-4">
-              <div className="text-5xl mb-2">🏢</div>
-              <div>
-                <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
-                  CNPJ
-                </p>
-                <p className="text-2xl md:text-3xl font-bold text-foreground font-mono">
-                  04.693.497/0001-21
-                </p>
+            {/* CNPJ Card */}
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+              <div className="text-center space-y-4">
+                <div className="text-5xl mb-2">🏢</div>
+                <div>
+                  <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
+                    CNPJ
+                  </p>
+                  <p className="text-2xl md:text-3xl font-bold text-foreground font-mono">
+                    04.693.497/0001-21
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Map Card */}
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-3">
+              <div className="h-64 md:h-80 lg:h-96">
+                <CompanyMap />
               </div>
             </div>
           </div>
         </div>
-      </div>
 
       {/* Footer */}
       <div className="border-t border-border bg-card/50 backdrop-blur-sm">
