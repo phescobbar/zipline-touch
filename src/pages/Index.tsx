@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import montesiteLogo from "@/assets/montesite-logo.svg";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -76,9 +77,16 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-sm md:text-base text-muted-foreground mt-6 lg:mt-8">
-          © 2025 Zipline Tecnologia
-        </p>
+        <div className="flex items-center justify-center gap-2 mt-6 lg:mt-8">
+          <p className="text-sm md:text-base text-muted-foreground">
+            Feito com
+          </p>
+          <img 
+            src={montesiteLogo} 
+            alt="MonteSite" 
+            className="h-4 md:h-5 w-auto opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
       </div>
     </div>
   );

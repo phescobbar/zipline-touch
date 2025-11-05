@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import montesiteLogo from "@/assets/montesite-logo.svg";
 import { Link } from "react-router-dom";
 
 const AlternativeLayout = () => {
@@ -98,9 +99,16 @@ const AlternativeLayout = () => {
       {/* Footer */}
       <div className="border-t border-border bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-8">
-          <p className="text-center text-muted-foreground">
-            © 2025 Zipline Tecnologia - Todos os direitos reservados
-          </p>
+          <div className="flex items-center justify-center gap-2">
+            <p className="text-center text-muted-foreground text-sm md:text-base">
+              Feito com
+            </p>
+            <img 
+              src={montesiteLogo} 
+              alt="MonteSite" 
+              className="h-4 md:h-5 w-auto opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
         </div>
       </div>
     </div>
