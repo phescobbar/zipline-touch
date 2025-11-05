@@ -6,12 +6,18 @@ const AlternativeLayout = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-background">
       {/* Navigation Toggle */}
-      <div className="absolute top-6 right-6 z-10">
+      <div className="absolute top-6 right-6 z-10 flex gap-2">
         <Link 
           to="/"
           className="px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
         >
-          Layout Alternativo
+          Layout 1
+        </Link>
+        <Link 
+          to="/layout-3"
+          className="px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
+        >
+          Layout 3
         </Link>
       </div>
 

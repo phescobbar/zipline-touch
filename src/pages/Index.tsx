@@ -6,12 +6,20 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4 md:p-8 lg:p-12 relative">
       {/* Navigation Toggle */}
-      <Link 
-        to="/alternative"
-        className="absolute top-6 right-6 px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
-      >
-        Ver Layout Alternativo
-      </Link>
+      <div className="absolute top-6 right-6 flex gap-2 z-10">
+        <Link 
+          to="/alternative"
+          className="px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
+        >
+          Layout 2
+        </Link>
+        <Link 
+          to="/layout-3"
+          className="px-4 py-2 bg-card border border-border rounded-lg shadow-lg text-sm font-medium text-foreground hover:bg-secondary transition-all"
+        >
+          Layout 3
+        </Link>
+      </div>
       <div className="w-full max-w-md md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
         <div className="bg-card rounded-2xl shadow-[var(--shadow-card)] p-6 md:p-10 lg:p-12 border border-border">
           {/* Desktop: Grid Layout | Mobile: Stack Layout */}
